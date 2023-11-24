@@ -1,0 +1,21 @@
+#ifndef __APP_MQTT_OPTIONS_H
+#define __APP_MQTT_OPTIONS_H
+
+#include "mqtt_client.h"
+
+const esp_mqtt_client_config_t app_mqtt_options_config = {
+    .broker.address.uri = "mqtt://BROKER_IP:1883",
+    .credentials = {
+        .username = "MQTT_USER",
+        .client_id = "home-frontdoor-esp32-doorbell",
+        .authentication = {
+            .password = "MQTT_PASS",
+        },
+    }
+};
+const char* mqtt_publish_topic = "MQTT_TOPIC";
+
+#endif
+
+
+

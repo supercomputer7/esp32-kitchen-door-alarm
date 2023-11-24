@@ -1,0 +1,7 @@
+#ifndef __APP_WIFI_CREDS_H
+#define __APP_WIFI_CREDS_H
+
+const char *app_wifi_ssid = "WIFI_SSID";
+const char *app_wifi_pass = "WIFI_PASS";
+
+#endif
